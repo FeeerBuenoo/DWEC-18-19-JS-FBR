@@ -3,6 +3,144 @@
   
   </head>
   <body>
-    <p>Hola Mundo JS</p>
+  	<p>Hola Mundo JS!!</p>
+  
+	<h2>Mi primer JavaScript</h2>
+	
+	<button type="button"
+	onclick="document.getElementById('demo1').innerHTML = Date()">
+	Haz Click para desplegar la fecha y hora</button>
+	
+	<p id="demo1"></p>
+	
+	<!-- Coge la fecha del sistema y la muestra al pinchar en el botón. -->
+	
+	<br>
+	
+	----------------------------------------------------------------------------------------------------------
+	
+	<br>
+	
+	<h2>¿Qué puede hacer JavaScript v.1?</h2>
+	
+	<p id="demo2">JavaScript puede cambiar contenido HTML.</p>
+	
+	<button type="button" onclick='document.getElementById("demo2").innerHTML = "Hola JavaScript!!"'>Hazme Click!</button>
+	
+	<!-- Cambia la entrada del mensaje por otra ya predefinida. -->	
+	
+	<br>
+	<br>
+	
+	----------------------------------------------------------------------------------------------------------
+	
+	<br>
+	
+	<h2>¿Qué puede hacer JavaScript v.2?</h2>
+	
+	<p>JavaScript puede cambiar valores en atributos de HTML.</p>
+	
+	<p>En el siguiente caso, javaScript cambia los valores del atributo de la imagen.</p>
+	
+	<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Encender la luz</button>
+	
+	<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+	
+	<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Apagar la luz</button>
+	
+	<!-- Con 2 imágenes crea el efecto de encender/apagar la luz intercalando entre ellas. -->
+	
+	<br>
+	
+	----------------------------------------------------------------------------------------------------------
+	
+	<br>
+	
+	<h2>Función de suma</h2>
+	
+	<p>¿Cuánto es la suma de 5 + 12?</p>
+	
+	<p id="demo3"></p>
+	
+	<script>document.getElementById("demo3").innerHTML = 5 + 12;</script>
+	
+	<!-- Podemos realizar operaciones matemáticas sin necesidad de usar variables, simplemente mostrando los número predefinidos. -->
+	
+	<br>
+	
+	----------------------------------------------------------------------------------------------------------
+	
+	<br>
+	
+	<h2>Contenido mediante script</h2>
+	
+	<h1 id="myH1"></h1>
+	<p id="myP"></p>
+	
+	<script>
+	  document.getElementById("myH1").innerHTML = "Enunciado en H1.";
+	  document.getElementById("myP").innerHTML = "Mi Primer párrafo.";
+	</script>
+	
+	<!-- Creamos la etiquetas para mostrar contenido pero lo rellenamos mediante un script posteriormente. -->
+	
+	<br>
+	
+	----------------------------------------------------------------------------------------------------------
+	
+	<br>
+	
+	<h2>Creación de variables y uso de las mismas</h2>
+	
+	<p>En este ejemplo x = 5 e y = 6, por tanto, ¿cuánto valdrá z?</p>
+	
+	<p id="demo4"></p>
+	
+	<script>
+	  var x = 5;
+	  var y = 6;
+	  var z = x + y;
+	  document.getElementById("demo4").innerHTML = "El valor de z es = " + z;
+	</script>
+	
+	<!-- Realizamos una suma con el uso de variables. -->
+	
+	<br>
+	
+	----------------------------------------------------------------------------------------------------------
+	
+	<br>
+	
+	<h2>Operaciones aritméticas</h2>
+	
+	<p>a = 3</p>
+	<p>x = (100 + 50) * a</p>
+	
+	<p id="demo5"></p>
+	
+	<script>
+	  var a = 3;
+	  var x = (100 + 50) * 3;
+	  document.getElementById("demo5").innerHTML = "¿Resultado de x? = " + x;
+    </script>
+	
+	<!-- Operación aritmética + muestra de resultado. -->
+	
+	<br>
+	
+	----------------------------------------------------------------------------------------------------------
+	
+	<br>
+	
+	<h2>Concatenación JavaScript</h2>
+	
+	<p id="demo6"></p>
+	
+	<script>
+	  var x = "BMW M" + 4;
+	  document.getElementById("demo6").innerHTML = x;
+	</script>
+	
+    <!-- Concatenación. -->
   </body>
 </html>
